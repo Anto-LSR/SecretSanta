@@ -9,7 +9,7 @@ let resultBtn = document.getElementById("showResultBtn");
 let inputBtn = document.getElementById("inputBtn");
 
 function clicklogo() {
-    let newUrl = "http://127.0.0.1:5500/frontend/index.html";
+    let newUrl = "https://anto-lsr.github.io/SecretSanta/";
     window.location.replace(newUrl);
 }
 
