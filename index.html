@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <header>
+        <img id="logo" onclick="clicklogo()" src="./img/reindeer.png" alt="">
+        <h1>SECRET SANTA</h1>
+    </header>
+    <div class="container">
+        <!-- <div id="weather">Afficher la météo</div> -->
+        <div class="insertNames">
+            <div class="participants">
+                <h3>ADD PARTICIPANTS</h3>
+            </div>
+            <div class="input">
+                <form action="" id="form" onsubmit="event.preventDefault();">
+                    <input maxlength="30" type="text" id="nbParticipants" placeholder="Ex : Santa Claus" autocomplete="off">
+                    <button id="inputBtn">Ok!</button>
+                    <!-- not displayed -->
+                </form>
+                <button id="confirmBtn">Confirm !</button>
+                <p id="error-msg"></p>
+                <button id="shuffle" class="hidden">Shuffle!</button>
+                <button id="showResultBtn" class="hidden">
+                    Click to show results !
+                </button>
+                <!-- <button id="editBtn" class="btns">Edit!</button> -->
+                <button id="shareBtn" class="btns hidden" disabled="true">Joyeuses fêtes !</button>
+            </div>
+            <div class="modal hidden" id="modal">
+                <div class="modalContent hidden" id="modalContent">
+                    <button id="closeModal"><i class="fas fa-times"></i></button>
+                    <input type="text" id="urlInput" spellcheck="false">
+                    <button id="copyBtn"><i class="far fa-copy"></i></button>
+
+                </div>
+            </div>
+            <div class="showNames" id="showNames">
+                <ul id="list">
+                </ul>
+            </div>
+            <div>
+                <img id="reinDeer" class="hidden" src="./img/reindeer.png" alt="">
+                <div id="showResults" class="hidden">
+                    <ul id="resultUl">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
