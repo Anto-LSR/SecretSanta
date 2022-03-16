@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Anto-LSR
 - 👀 I’m interested in cool looking web applications
-- 🌱 I’m a newbie developper
+- 🌱 I’m a junior developper
 - 🎵 I used to be a professional musican & composer
 - ✨ If you wanna reach me, -> https://twitter.com/Everbbq
 
